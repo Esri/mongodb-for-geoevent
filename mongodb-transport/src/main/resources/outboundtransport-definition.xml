@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transport name="MongoDB" label="Mongo DB Outbound Transport" domain="com.esri.ges.transport.outbound" type="outbound">
+	<description>ESRI Mongo DB Transport for outbound streams.</description>
+	<propertyDefinitions>
+		<propertyDefinition propertyName="outputHostName"             label="Host Name" description="The name of the machine where the Mongo database is located" propertyType="String" defaultValue="localhost" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputPort"                 label="Port" description="The port where the Mongo database is listening for connections." propertyType="Integer" defaultValue="27017" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputDatabaseName"         label="Database Name" description="The name of the database where you want to store the data" propertyType="String" defaultValue="mydb" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputUserName"             label="Authentication User Name" description="If authentication is required to write to this database, enter the user name here." propertyType="String" defaultValue="" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputPassword"             label="Authentication Password" description="If authentication is required to write to this database, enter the password here." propertyType="Password" defaultValue="" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputCollectionName"       label="Collection Name" description="The name of the collection where the data will be written" propertyType="String" defaultValue="GeoEvents" mandatory="false" readOnly="false"/>
+		<propertyDefinition propertyName="outputWriteConcern"         label="Write Concern" description="The method that is used to write data to the Mongo Database.  For details, consult the Mongo DB Documentation on different write concern modes.  Errors encountered will be logged, but will not stop the processing of future GeoEvents." propertyType="String" defaultValue="ERRORS_IGNORED" mandatory="false" readOnly="false"><allowedValues><value>ERRORS_IGNORED</value><value>ACKNOWLEDGED</value><value>UNACKNOWLEDGED</value><value>JOURNALED</value><value>REPLICA_ACKNOWLEDGED</value></allowedValues></propertyDefinition>
+	</propertyDefinitions>
+</transport>
