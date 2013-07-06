@@ -2,7 +2,7 @@
 
 ArcGIS GeoEvent Processor Sample MongoDB Outbound Connector for storing GeoEvents.
 
-![App](https://raw.github.com/Esri/mongodb-for-geoevent/master/mongodb-for-geoevent.png)
+![App](mongodb-for-geoevent.png?raw=true)
 
 ## Features
 * MongoDB Outbound Transport
