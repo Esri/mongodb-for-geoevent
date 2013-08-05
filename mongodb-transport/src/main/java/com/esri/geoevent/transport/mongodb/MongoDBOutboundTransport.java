@@ -46,7 +46,7 @@ public class MongoDBOutboundTransport extends OutboundTransportBase
   private MongoClient         mongoClient;
   private DB                  db;
 
-  private Charset             charset                  = Charset.forName("UTF-8");                          ;
+  private Charset             charset                  = Charset.forName("UTF-8");
   private CharsetDecoder      decoder;
 
   private DBCollection        collection;

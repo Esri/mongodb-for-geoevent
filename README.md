@@ -17,9 +17,10 @@ Building the source code:
 4. Modify the main pom.xml 'ages-sdk-repo' repository section to point to the ArcGIS GeoEvent Processor SDK 'repository' folder.
 5. Run 'mvn install -Dcontact.address=[YourContactEmailAddress]'
 
-Installing the bulit jar files:
+Installing the transport and connector:
 
 1. Copy the *.jar files under the 'target' sub-folder(s) into the [ArcGIS-GeoEvent-Processor-Install-Directory]/deploy folder.
+2. Open the ArcGIS GeoEvent Processor Manager, go to the 'Site -> Configuration Store' page and import the Mongo_Connector.xml file.
 
 ## Requirements
 
