@@ -12,10 +12,7 @@ ArcGIS GeoEvent Processor Sample MongoDB Outbound Connector for storing GeoEvent
 Building the source code:
 
 1. Make sure Maven and ArcGIS GeoEvent Processor SDK are installed on your machine.
-2. Download and unzip the .zip file, or clone the repository.
-3. Copy the ArcGIS GeoEvent Processor SDK 'repository' folder to be a sibling folder to this repo folder, or
-4. Modify the main pom.xml 'ages-sdk-repo' repository section to point to the ArcGIS GeoEvent Processor SDK 'repository' folder.
-5. Run 'mvn install -Dcontact.address=[YourContactEmailAddress]'
+2. Run 'mvn install -Dcontact.address=[YourContactEmailAddress]'
 
 Installing the transport and connector:
 
