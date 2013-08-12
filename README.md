@@ -28,7 +28,8 @@ Installing the transport and connector:
 
 ## Resources
 
-* [ArcGIS GeoEvent Processor for Server Resource Center](http://resources.arcgis.com/en/communities/geoevent)
+* [Download the connector's tutorial](http://www.arcgis.com/home/item.html?id=0f246f7e9f074b3f80b24724b460e82f) from the ArcGIS GeoEvent Processor Gallery
+* [ArcGIS GeoEvent Processor for Server Resource Center](http://pro.arcgis.com/share/geoevent-processor/)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
 
