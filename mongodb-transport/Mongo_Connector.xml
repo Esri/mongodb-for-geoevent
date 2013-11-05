@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template>
 	<connectors>
-		<connector label="Write JSON documents to MongoDB" name="mongodb-json-out"
-			type="outbound">
+		<connector label="Write JSON documents to MongoDB" name="mongodb-json-out" type="outbound">
 			<adapter uri="com.esri.ges.adapter.outbound/Generic-JSON/10.2.0" />
+			<transport uri="com.esri.geoevent.transport.outbound/MongoDB/10.2.0" />
 			<defaultName>mongodb-json-out</defaultName>
-			<description>Writes a JSON document representation of each GeoEvent
-				observed to a MongoDB document store.</description>
+			<description>Writes a JSON document representation of each GeoEvent observed to a MongoDB document store.</description>
 			<properties>
 				<advanced>
-					<property label="Authentication User Name" name="outputUserName"
-						source="transport" />
-					<property label="Authentication Password" name="outputPassword"
-						source="transport" />
-					<property default="false" label="Formatted JSON" name="prettyJson"
-						source="adapter" />
-					<property default="ERRORS_IGNORED" label="Write Concern"
-						name="outputWriteConcern" source="transport" />
+					<property label="Authentication User Name" name="outputUserName" source="transport" />
+					<property label="Authentication Password" name="outputPassword" source="transport" />
+					<property default="false" label="Formatted JSON" name="prettyJson" source="adapter" />
+					<property default="ERRORS_IGNORED" label="Write Concern" name="outputWriteConcern" source="transport" />
 				</advanced>
 				<hidden>
-					<property default="application/json" label="MIME Type"
-						name="mimeType" source="adapter" />
+					<property default="application/json" label="MIME Type" name="mimeType" source="adapter" />
 				</hidden>
 				<shown>
-					<property default="localhost" label="Host Name" name="outputHostName"
-						source="transport" />
-					<property default="27017" label="Port" name="outputPort"
-						source="transport" />
-					<property default="mydb" label="Database Name" name="outputDatabaseName"
-						source="transport" />
-					<property default="GeoEvents" label="Collection Name"
-						name="outputCollectionName" source="transport" />
+					<property default="localhost" label="Host Name" name="outputHostName" source="transport" />
+					<property default="27017" label="Port" name="outputPort" source="transport" />
+					<property default="mydb" label="Database Name" name="outputDatabaseName" source="transport" />
+					<property default="GeoEvents" label="Collection Name" name="outputCollectionName" source="transport" />
 				</shown>
 			</properties>
-			<transport uri="com.esri.ges.transport.outbound/MongoDB/10.2.0" />
 		</connector>
 	</connectors>
 </template>
