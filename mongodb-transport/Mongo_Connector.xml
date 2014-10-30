@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template>
 	<connectors>
-		<connector label="Write JSON documents to MongoDB" name="mongodb-json-out" type="outbound">
-			<adapter uri="com.esri.ges.adapter.outbound/Generic-JSON/10.2.0" />
-			<transport uri="com.esri.geoevent.transport.outbound/MongoDB/10.2.0" />
+		<connector label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_LABEL}" name="mongodb-json-out" type="outbound">
+			<adapter uri="com.esri.ges.adapter.outbound/Generic-JSON/10.3.0" />
+			<transport uri="com.esri.geoevent.transport.outbound/MongoDB/10.3.0" />
 			<defaultName>mongodb-json-out</defaultName>
-			<description>Writes a JSON document representation of each GeoEvent observed to a MongoDB document store.</description>
+			<description>${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_DESC}</description>
 			<properties>
 				<advanced>
-					<property label="Authentication User Name" name="outputUserName" source="transport" />
-					<property label="Authentication Password" name="outputPassword" source="transport" />
-					<property default="false" label="Formatted JSON" name="prettyJson" source="adapter" />
-					<property default="ERRORS_IGNORED" label="Write Concern" name="outputWriteConcern" source="transport" />
+					<property label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_USERNAME_LBL}" name="outputUserName" source="transport" />
+					<property label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_PASSWORD_LBL}" name="outputPassword" source="transport" />
+					<property default="false" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_PJSON_LBL}" name="prettyJson" source="adapter" />
+					<property default="ERRORS_IGNORED" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_WRITE_CONCERN_LBL}" name="outputWriteConcern" source="transport" />
 				</advanced>
 				<hidden>
-					<property default="application/json" label="MIME Type" name="mimeType" source="adapter" />
+					<property default="application/json" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_MIME_TYPE_LBL}" name="mimeType" source="adapter" />
 				</hidden>
 				<shown>
-					<property default="localhost" label="Host Name" name="outputHostName" source="transport" />
-					<property default="27017" label="Port" name="outputPort" source="transport" />
-					<property default="mydb" label="Database Name" name="outputDatabaseName" source="transport" />
-					<property default="GeoEvents" label="Collection Name" name="outputCollectionName" source="transport" />
+					<property default="localhost" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_HOSTNAME_LBL}" name="outputHostName" source="transport" />
+					<property default="27017" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_PORT_LBL}" name="outputPort" source="transport" />
+					<property default="mydb" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_DB_NAME_LBL}" name="outputDatabaseName" source="transport" />
+					<property default="GeoEvents" label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_COLLECTION_NAME_LBL}" name="outputCollectionName" source="transport" />
 				</shown>
 			</properties>
 		</connector>
