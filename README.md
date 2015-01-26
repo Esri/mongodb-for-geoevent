@@ -1,6 +1,6 @@
 # mongodb-for-geoevent
 
-ArcGIS 10.3.x GeoEvent Extension Sample MongoDB Outbound Connector for storing GeoEvents.
+ArcGIS 10.3 GeoEvent Extension sample MongoDB Ouptut Connector for storing GeoEvents.
 
 ![App](mongodb-for-geoevent.png?raw=true)
 
@@ -11,13 +11,13 @@ ArcGIS 10.3.x GeoEvent Extension Sample MongoDB Outbound Connector for storing G
 
 Building the source code:
 
-1. Make sure Maven and ArcGIS Extension Processor SDK are installed on your machine.
+1. Make sure Maven and ArcGIS GeoEvent Extension SDK are installed on your machine.
 2. Run 'mvn install -Dcontact.address=[YourContactEmailAddress]'
 
 Installing the transport and connector:
 
 1. Copy the *.jar files under the 'target' sub-folder(s) into the [ArcGIS-GeoEvent-Extension-Install-Directory]/deploy folder.
-2. Open the ArcGIS GeoEvent Manager, go to the 'Site -> Configuration Store' page and import the Mongo_Connector.xml file.
+2. Open GeoEvent Manager, go to the 'Site -> Configuration Store' page and import the Mongo_Connector.xml file.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ Installing the transport and connector:
 ## Resources
 
 * [Download the connector's tutorial](http://www.arcgis.com/home/item.html?id=0f246f7e9f074b3f80b24724b460e82f) from the ArcGIS GeoEvent Extension Gallery
-* [ArcGIS GeoEvent Extension for Server Resource Center](http://pro.arcgis.com/share/geoevent-processor/)
+* [ArcGIS GeoEvent Extension for Server Resources](http://links.esri.com/geoevent)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * [twitter@esri](http://twitter.com/esri)
 
