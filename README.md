@@ -1,6 +1,6 @@
 # mongodb-for-geoevent
 
-ArcGIS 10.3 GeoEvent Extension for Server sample MongoDB Ouptut Connector for sending GeoEvents to MongoDB.
+ArcGIS 10.4 GeoEvent Extension for Server sample MongoDB Ouptut Connector for sending GeoEvents to MongoDB.
 
 ![App](mongodb-for-geoevent.png?raw=true)
 
