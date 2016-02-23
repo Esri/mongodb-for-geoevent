@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.esri.geoevent.parent</groupId>
 		<artifactId>mongodb</artifactId>
-		<version>10.3.0</version>
+		<version>10.4.0</version>
 	</parent>
 	<groupId>com.esri.geoevent.transport</groupId>
 	<artifactId>mongodb-transport</artifactId>
