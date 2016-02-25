@@ -2,8 +2,8 @@
 <template>
 	<connectors>
 		<connector label="${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_LABEL}" name="mongodb-json-out" type="outbound">
-			<adapter uri="com.esri.ges.adapter.outbound/Generic-JSON/10.3.0" />
-			<transport uri="com.esri.geoevent.transport.outbound/MongoDB/10.3.0" />
+			<adapter uri="com.esri.ges.adapter.outbound/Generic-JSON/10.4.0" />
+			<transport uri="com.esri.geoevent.transport.outbound/MongoDB/10.4.0" />
 			<defaultName>mongodb-json-out</defaultName>
 			<description>${com.esri.geoevent.transport.mongodb-transport.CONNECTOR_DESC}</description>
 			<properties>
