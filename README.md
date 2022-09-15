@@ -1,4 +1,5 @@
 # mongodb-for-geoevent
+**This item has been deprecated. Please consider contributing an idea to the [Esri Community](https://community.esri.com/t5/arcgis-geoevent-server-ideas/idb-p/arcgis-geoevent-server-ideas) if you need similar functionality.**
 
 ArcGIS 10.4 GeoEvent Extension for Server sample MongoDB Ouptut Connector for sending GeoEvents to MongoDB.
 
